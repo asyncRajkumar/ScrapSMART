@@ -1,0 +1,185 @@
+.float .logos {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  background-color: rgb(70, 70, 70);
+  /* padding: 12px; */
+  z-index: 99;
+}
+
+.float .logos .logo1 video{
+cursor: pointer;
+}
+
+.complete{
+  background-color: #000;
+}
+
+.top{
+ color: rgb(148, 148, 148);
+ text-align: center;
+ padding:20vh 22% ;
+ 
+
+}
+
+.top h1{
+  font-size: 4vw;
+  font-weight: bolder;
+  margin-bottom: 18px;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.top p{
+  font-size: 1.2vw;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.top h4{
+  font-size: 1.6vw;
+  font-weight: bolder;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container1 {
+  width: 100%;
+}
+
+.part {
+ columns: 400px;
+ break-inside: avoid;
+ margin: 10px;
+}
+
+.part > div {
+  break-inside: avoid;
+}
+
+.yo1 .part1,
+.yo2 .part1,
+.yo3 .part1,
+.yo4 .part1,
+.yo5 .part1,
+.yo6 .part1,
+.yo7 .part1,
+.yo8 .part1,
+.yo9 .part1,
+.yo10 .part1 {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 15px; */
+  position: relative;
+  overflow: hidden;
+  transition: all ease 0.5s;
+  margin-bottom: 10px;
+}
+
+.yo1 .part1 {
+  height: 400px; /* Shorter height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1");
+}
+
+.yo2 .part1 {
+  height: 650px; /* Medium height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.yo3 .part1 {
+  height: 700px; /* Medium height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.yo4 .part1 {
+  height: 500px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo5 .part1 {
+  height: 450px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo6 .part1 {
+  height: 600px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo7 .part1 {
+  height: 550px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo8 .part1 {
+  height: 400px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo9 .part1 {
+  height: 750px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.yo10 .part1 {
+  height: 500px; /* Custom height */
+  background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"); /* Placeholder image */
+}
+
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 31, 31, 0.9); /* Semi-transparent overlay */
+  padding: 20px 15px;
+  cursor: pointer;
+  transition: all ease 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading {
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
+
+.heading h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(180, 175, 175);
+  padding: 10px 20px;
+  background-color: rgba(32, 31, 31, 0.9);
+  color: rgb(235, 235, 235);
+  font-weight: bolder;
+  display: inline-block;
+  border-radius: 20px;
+  transition: all ease 1s;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 29px;
+  margin-top: 18px;
+  color: rgb(180, 175, 175);
+}
+
+.part1:hover .overlay {
+  display: block;
+}
+
+.part1:hover h3 {
+  display: none;
+}
+
+.part1:hover {
+  transform: rotate3d(-1, 1, 0, 10deg);
+}

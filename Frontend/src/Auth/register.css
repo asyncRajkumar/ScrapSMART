@@ -1,0 +1,157 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.App {
+  background-color: #FFF5F0;
+  color: #fff;
+  height: 100vh;
+  padding: 1rem 0.5rem;
+}
+
+section {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #328771;
+  border-radius: 2%;
+}
+
+form {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+a, a:visited {
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button,
+#role,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  padding: 9px;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+/* New styles for OAuth buttons */
+.oauth-buttons {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  /* margin-top: 1rem; */
+  align-items: center;
+}
+
+.oauth-buttons button {
+  width: 530px;
+  font-size: 26px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 0.5rem;
+}
+
+.oauth-buttons button:hover {
+  opacity: 0.9;
+}
+
+.oauth-buttons button:first-of-type {
+  background-color: #24292e;
+  color: #fff;
+}
+
+.oauth-buttons button:last-of-type {
+  background-color: #4285f4; /* Google button color */
+  color: #fff;
+}
+
+@media screen and (width: 558px) {
+  section {
+      width: 100%;
+  }
+  .oauth-buttons button {
+    width: 40px;
+  }
+}

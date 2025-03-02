@@ -1,0 +1,77 @@
+.navbar {
+    min-height: 8.5vh;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 7%;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    color: #212121;
+    cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 17px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    font-size: 19px;
+    font-weight: 200;
+    padding: 10px 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgb(40, 109, 40);
+    border-top-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    color: white;
+}
+
+/* Menu Icon for smaller screens */
+.menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 665px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 8.5vh; /* Adjusted to match navbar height */
+        right: 0;
+        background-color: rgb(34, 30, 30);
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links.open {
+        display: flex;
+        position: fixed;
+    }
+
+    .nav-links a {
+        color: white; /* Ensure links are visible on dark background */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

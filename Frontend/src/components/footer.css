@@ -1,0 +1,120 @@
+.footer {
+  background-color: #C0E8DD; /* Light green background */
+  padding: 4vw; /* Responsive padding */
+  font-family: sans-serif; /* Clean font */
+}
+
+.footer-container {
+  max-width: 1200px; /* Wider container for better spacing */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding to the sides */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 40px; /* Space between left and right sections */
+}
+
+.footer-left {
+  flex: 1; /* Take up available space */
+  max-width: 200px; /* Limit width for logo and copyright */
+}
+
+.footer-logo {
+  width: 150px; /* Fixed width for logo */
+  margin-bottom: 10px; /* Space below logo */
+}
+
+.footer-copyright {
+  font-size: 0.9rem; /* Smaller font size for copyright */
+  color: #333; /* Dark gray text color */
+}
+
+.footer-right {
+  flex: 2; /* Take up more space for sections */
+  display: flex;
+  justify-content: flex-end; /* Align sections to the right */
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 40px; /* Space between sections */
+}
+
+.footer-section {
+  flex: 1; /* Each section takes equal space */
+  min-width: 150px; /* Minimum width for each section */
+}
+
+.footer-section h3 {
+  font-size: 1.2rem; /* Slightly larger heading */
+  margin-bottom: 10px; /* Space below heading */
+  color: #333; /* Dark gray text color */
+}
+
+.footer-section ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.footer-section a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #333; /* Dark gray link color */
+  font-size: 0.9rem; /* Smaller font size for links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer-section a:hover {
+  color: #000; /* Darker color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack left and right sections vertically */
+    gap: 20px; /* Reduce gap between sections */
+  }
+
+  .footer-left {
+    max-width: 100%; /* Full width for logo and copyright */
+    text-align: center; /* Center align logo and copyright */
+  }
+
+  .footer-right {
+    justify-content: center; /* Center align sections */
+  }
+
+  .footer-sections {
+    gap: 20px; /* Reduce gap between sections */
+  }
+
+  .footer-section {
+    flex: 1 0 45%; /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    flex: 1 0 100%; /* Full width on small screens */
+    text-align: center; /* Center align text */
+  }
+
+  .footer-logo {
+    width: 120px; /* Smaller logo for small screens */
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem; /* Smaller font size for copyright */
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem; /* Slightly smaller heading */
+  }
+
+  .footer-section a {
+    font-size: 0.85rem; /* Smaller font size for links */
+  }
+}

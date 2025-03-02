@@ -1,0 +1,110 @@
+.hero{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://uffizio.com/wp-content/uploads/2024/02/Fleets-1.jpg");
+        width: 100vw;
+        height: 74vh;
+        border-bottom-left-radius: 7%;
+        border-bottom-right-radius: 7%;
+        background-size: cover;      
+        background-position: center;
+        position: relative;
+        z-index: -1;
+}
+
+.tittle{
+    position: absolute;
+    top: 28%;
+}
+
+.tittle h1 {
+    font-size: 6.5em;
+    font-weight: 900;
+    line-height: 83%;
+    letter-spacing: -1vh;
+    color: #ecf39e;
+    transition: all .1s ease-in;
+    overflow: hidden;
+}
+
+
+.dist{
+margin-left: 5vh;
+}
+
+.small-box{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.small-img img{
+width: 0;
+overflow: hidden;
+object-fit: cover;
+object-position: 50%;
+height: 4.8em;
+border: 1px solid white;
+border-radius: 7px;
+opacity: 0;
+/* transform: translateX(-150%); */
+}
+
+
+
+.hero button {
+    background-color: #90a955;
+padding: 10px 25px;
+font-size: 15px;
+font-weight: 700;
+display: flex;
+align-items: center;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+transition: all .1s ease-in;
+position: absolute;
+bottom: 10%;
+left: 50%;
+transform: translateX(-50%);
+z-index: 10;
+}
+
+.hero button:hover{
+    background-color: #738642;
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.small-box .btn span{
+    margin-left: 4px;
+}
+
+@media (max-width: 780px) {
+    .tittle h1 {
+        font-size: 4.5em;
+        /* -webkit-text-stroke: .2vh rgb(112, 102, 102); */
+        /* letter-spacing: -.4vh; */
+    }
+    .small-img img{
+        height: 9.5vw;
+    }
+}
+@media (max-width: 571px) {
+    .tittle h1 {
+        font-size: 3em;
+        /* -webkit-text-stroke: .2vh rgb(112, 102, 102); */
+        letter-spacing: -.1vh;
+        line-height: .8;
+    }
+    .dist{
+        margin-left: 2vh;
+        }
+    .small-img img{
+        height: 11.9vw;
+       
+    }
+    .hero{
+        background-position: 70% 50%;
+        /* background-size: 270%; */
+    }
+}

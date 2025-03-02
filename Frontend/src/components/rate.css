@@ -1,0 +1,121 @@
+.rate {
+  padding: 3% 7%;
+}
+
+.note {
+  background-color: #CCE5FF;
+  padding: 1.5% 2%;
+  color: rgba(41, 41, 196, 0.863);
+  border-radius: 10px;
+}
+
+.note h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.note p {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.note p span {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rate-table h2 {
+  text-align: center;
+  margin: 3% 0;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.cards {
+  display: flex;
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap;
+}
+
+.rate-table .card {
+  width: 17%; /* Adjusts card width for better spacing */
+  background-color: rgb(221, 221, 221);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 2% 2%;
+  border-radius: 15px;
+  text-align: center; /* Centers content inside the card */
+}
+
+.rate-table .card img {
+  width: 74px;
+  height: 74px; /* Ensures images are square */
+  margin-bottom: 10px; /* Adds spacing below the image */
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.rate-table .card h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(114, 114, 114);
+  margin: 10px 0; /* Adds spacing around the heading */
+}
+
+.rate-table .card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(47, 156, 47);
+  margin: 0; /* Removes default margin for better alignment */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .rate-table .card {
+      width: 22%; /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .rate-table .card {
+      width: 30%; /* Adjust card width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .rate-table .card {
+      width: 45%; /* Adjust card width for smaller tablets */
+  }
+
+  .rate-table h2 {
+      font-size: 30px; /* Adjust heading size for smaller screens */
+  }
+
+  .note h3 {
+      font-size: 18px; /* Adjust note heading size for smaller screens */
+  }
+
+  .note p {
+      font-size: 16px; /* Adjust note paragraph size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .rate-table .card {
+      width: 90%; /* Adjust card width for mobile devices */
+  }
+
+  .rate-table h2 {
+      font-size: 25px; /* Further adjust heading size for mobile devices */
+  }
+
+  .note h3 {
+      font-size: 16px; /* Further adjust note heading size for mobile devices */
+  }
+
+  .note p {
+      font-size: 14px; /* Further adjust note paragraph size for mobile devices */
+  }
+}

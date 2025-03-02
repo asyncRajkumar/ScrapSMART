@@ -1,0 +1,16 @@
+.kuch{
+    position: relative;
+}
+
+.kuch .external1 img{
+    position: absolute;
+    top: 20%;
+    right: 48%;
+    mix-blend-mode: multiply;
+}
+
+.kuch .external2 img{
+    position: absolute;
+    top: 33%;
+    right: 8%;
+}

@@ -1,0 +1,30 @@
+/* Add aspect-ratio container for images */
+.swiper-slide {
+  width: 37rem;
+  aspect-ratio: 3/4;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Update navigation positioning */
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Add spacing between controls */
+}
+
+/* Remove legacy positioning percentages */
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+  transform: none !important;
+  margin: 0 1rem;
+}

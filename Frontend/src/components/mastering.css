@@ -1,0 +1,91 @@
+.eleve {
+    padding: 5vw 7vw 1vw 7vw;
+    background-color: #FFF5F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.eleve img{
+    width: 50px;
+   
+}
+
+.eleve .about2 {
+    width: 50%;
+}
+
+.eleve .about2 img {
+    width: 60%;
+    object-fit: cover;
+    margin-left: 3vw;
+}
+
+.eleve .about {
+    width: 50%;
+}
+
+.eleve .about h1 {
+    font-size: 4vw;
+    color: #000000;
+    text-align: left;
+    letter-spacing: -4px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.eleve .about .second {
+    font-size: 22px;
+    color: #4e4a4a;
+    font-weight: bolder;
+    line-height: 1.7;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .eleve .about2, .kuch .about {
+        width: 100%;
+    }
+
+    .eleve .about2 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .eleve .about h1 {
+        font-size: 8vw;
+        letter-spacing: -2px;
+    }
+
+    .eleve .about .second {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eleve .about1, .eleve .about {
+        width: 100%;
+    }
+
+    .eleve .about h1 {
+        font-size: 10vw;
+        letter-spacing: -1px;
+    }
+
+    .eleve .about .second {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .eleve{
+        height: 190vw;
+    }
+
+    .eleve .about2 {
+       padding-top: 35px;
+    }
+}

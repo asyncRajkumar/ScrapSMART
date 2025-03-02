@@ -1,0 +1,100 @@
+.kuch {
+    padding: 5vw 7vw 1vw 7vw;
+    background-color: #DCF6E8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #DCF6E8;
+    overflow: hidden;
+}
+
+.kuch .about1 {
+    width: 50%;
+}
+
+.kuch .about1 img {
+    width: 70%;
+    object-fit: cover;
+    margin-left: 5.9vw;
+}
+
+.kuch .about {
+    width: 50%;
+}
+
+.kuch .about .first {
+    font-size: 30px;
+    color: #4e4a4a;
+    text-align: left;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.kuch .about h1 {
+    font-size: 4vw;
+    color: #000000;
+    text-align: left;
+    letter-spacing: -4px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.kuch .about .second {
+    font-size: 22px;
+    color: #4e4a4a;
+    text-align: left;
+    font-weight: bolder;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .kuch .about1, .kuch .about {
+        width: 100%;
+    }
+
+    .kuch .about1 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .kuch .about .first {
+        font-size: 24px;
+    }
+
+    .kuch .about h1 {
+        font-size: 8vw;
+        letter-spacing: -2px;
+    }
+
+    .kuch .about .second {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .kuch .about .first {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .kuch .about h1 {
+        font-size: 10vw;
+        letter-spacing: -1px;
+    }
+
+    .kuch .about .second {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .kuch{
+        height: 190vw;
+    }
+
+    .kuch .about1 {
+       padding-top: 35px;
+    }
+}
